@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "simple-import-sort",
+    "sort-destructure-keys",
+    "sort-keys-fix"
+  ],
+  "rules": {
+    "import/prefer-default-export": "off",
+    "react-hooks/exhaustive-deps": "error",
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".js", ".jsx"] }
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore"
+      }
+    ],
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "reservedFirst": true,
+        "shorthandLast": true
+      }
+    ],
+    "simple-import-sort/exports": "warn",
+    "simple-import-sort/imports": "warn",
+    "sort-destructure-keys/sort-destructure-keys": "warn",
+    "sort-keys-fix/sort-keys-fix": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": [
+        ["@/atoms", "./src/components/atoms"],
+        ["@/molecules", "./src/components/molecules"],
+        ["@/organisms", "./src/components/organisms"],
+        ["@/styles", "./src/styles"],
+        ["@/templates", "./src/components/templates"]
+      ]
+    }
+  }
+}
