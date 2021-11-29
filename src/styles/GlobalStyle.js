@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: Roboto, 'Noto Sans KR', sans-serif;
+    font-family: Noto Sans KR, sans-serif;
   }
 
   #__next {
