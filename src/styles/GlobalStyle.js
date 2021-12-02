@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    background-color: ${({ theme }) => theme.palette.bg};
+    color: ${({ theme }) => theme.palette.fg};
     font-family: Noto Sans KR, sans-serif;
   }
 
