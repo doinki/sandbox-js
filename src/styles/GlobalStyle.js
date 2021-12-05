@@ -3,11 +3,16 @@ import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
   ${normalize}
-  
-  html {
-    box-sizing: border-box;
+
+  #__next {
+    display: flex;
+    flex-direction: column;
   }
-  
+
+  #__portal {
+    position: fixed;
+  }
+
   *,
   *::after,
   *::before {
@@ -20,9 +25,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Noto Sans KR, sans-serif;
   }
 
-  #__next {
-    display: flex;
-    flex-direction: column;
+  html {
+    box-sizing: border-box;
   }
 `;
 

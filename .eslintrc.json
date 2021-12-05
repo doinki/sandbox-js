@@ -24,6 +24,14 @@
   ],
   "rules": {
     "import/prefer-default-export": "off",
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "aspects": ["invalidHref", "preferButton"],
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"]
+      }
+    ],
     "react-hooks/exhaustive-deps": "error",
     "react/function-component-definition": [
       "error",
