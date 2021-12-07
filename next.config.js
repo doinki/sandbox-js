@@ -3,7 +3,8 @@
  */
 module.exports = {
   // experimental: {
-  // styledComponents: true, // https://nextjs.org/docs/advanced-features/compiler#styled-components
+  //   scrollRestoration: true,
+  //   styledComponents: true, // https://nextjs.org/docs/advanced-features/compiler#styled-components
   // },
   poweredByHeader: false,
   reactStrictMode: true,
