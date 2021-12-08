@@ -67,6 +67,7 @@
     "import/resolver": {
       "alias": [
         ["@/atoms", "./src/components/atoms"],
+        ["@/hooks", "./src/hooks"],
         ["@/molecules", "./src/components/molecules"],
         ["@/organisms", "./src/components/organisms"],
         ["@/styles", "./src/styles"],
