@@ -4,6 +4,7 @@
     "paths": {
       "@/atoms": ["src/components/atoms/index.js"],
       "@/hooks": ["src/hooks/index.js"],
+      "@/icons": ["src/components/atoms/icons/index.js"],
       "@/molecules": ["src/components/molecules/index.js"],
       "@/organisms": ["src/components/organisms/index.js"],
       "@/styles": ["src/styles/index.js"],

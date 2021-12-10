@@ -68,6 +68,7 @@
       "alias": [
         ["@/atoms", "./src/components/atoms"],
         ["@/hooks", "./src/hooks"],
+        ["@/icons", "./src/components/atoms/icons"],
         ["@/molecules", "./src/components/molecules"],
         ["@/organisms", "./src/components/organisms"],
         ["@/styles", "./src/styles"],
