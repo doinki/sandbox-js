@@ -4,11 +4,6 @@ import { normalize } from 'styled-normalize';
 const GlobalStyle = createGlobalStyle`
   ${normalize}
 
-  #__next {
-    display: flex;
-    flex-direction: column;
-  }
-
   #__portal {
     position: fixed;
   }
@@ -27,13 +22,6 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-  }
-
-  ol,
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
   }
 `;
 
