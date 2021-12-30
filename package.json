@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "^12.0.7",
@@ -29,9 +30,14 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4",
     "prettier": "^2.5.1"
   },
   "resolutions": {
     "styled-components": "^5"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix"
   }
 }
