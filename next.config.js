@@ -1,7 +1,11 @@
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 /**
  * @type {import('next').NextConfig}
  */
-module.exports = {
+const nextConfig = {
   experimental: {
     // scrollRestoration: true,
     styledComponents: true, // https://nextjs.org/docs/advanced-features/compiler#styled-components
@@ -10,3 +14,5 @@ module.exports = {
   reactStrictMode: true,
   swcMinify: true,
 };
+
+module.exports = withBundleAnalyzer(nextConfig);
