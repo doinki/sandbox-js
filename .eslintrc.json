@@ -1,29 +1,26 @@
 {
   "env": {
-    "browser": true,
     "es2021": true
   },
   "extends": [
     "airbnb",
     "airbnb/hooks",
-    "next/core-web-vitals",
-    "plugin:prettier/recommended"
+    "plugin:@next/next/recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/jsx-runtime"
   ],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    "ecmaVersion": 12
   },
-  "plugins": [
-    "react",
-    "simple-import-sort",
-    "sort-destructure-keys",
-    "sort-keys-fix"
-  ],
+  "plugins": ["simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
   "rules": {
     "import/prefer-default-export": "off",
+    "jsx-a11y/alt-text": [
+      "error",
+      {
+        "img": ["Image"]
+      }
+    ],
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -32,7 +29,12 @@
         "specialLink": ["hrefLeft", "hrefRight"]
       }
     ],
-    "react-hooks/exhaustive-deps": "error",
+    "jsx-a11y/img-redundant-alt": [
+      "error",
+      {
+        "components": ["Image"]
+      }
+    ],
     "react/function-component-definition": [
       "error",
       {
@@ -58,6 +60,7 @@
         "shorthandLast": true
       }
     ],
+    "react/prop-types": "off",
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": "warn",
     "sort-destructure-keys/sort-destructure-keys": "warn",

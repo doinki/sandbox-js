@@ -9,9 +9,9 @@
     "styled-normalize": "^8.0.7"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^12.0.7",
     "eslint": "^8.6.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "^12.0.7",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.25.4",
