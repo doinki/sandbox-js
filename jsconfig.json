@@ -2,7 +2,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@/api": ["src/api/index.js"],
       "@/atoms": ["src/components/atoms/index.js"],
+      "@/constants": ["src/constants/index.js"],
       "@/hooks": ["src/hooks/index.js"],
       "@/icons": ["src/components/atoms/icons/index.js"],
       "@/molecules": ["src/components/molecules/index.js"],

@@ -69,7 +69,9 @@
   "settings": {
     "import/resolver": {
       "alias": [
+        ["@/api", "./src/api"],
         ["@/atoms", "./src/components/atoms"],
+        ["@/constants", "./src/constants"],
         ["@/hooks", "./src/hooks"],
         ["@/icons", "./src/components/atoms/icons"],
         ["@/molecules", "./src/components/molecules"],
