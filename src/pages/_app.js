@@ -1,3 +1,5 @@
+import 'normalize.css';
+
 import { DefaultSeo } from 'next-seo';
 import { ThemeProvider } from 'styled-components';
 

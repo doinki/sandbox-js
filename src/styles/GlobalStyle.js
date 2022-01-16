@@ -1,9 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
 
 const GlobalStyle = createGlobalStyle`
-  ${normalize}
-
   #__portal {
     position: fixed;
   }
