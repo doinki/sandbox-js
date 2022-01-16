@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "paths": {
       "@/api": ["src/api/index.js"],
       "@/atoms": ["src/components/atoms/index.js"],
