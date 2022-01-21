@@ -8,17 +8,20 @@ const GlobalStyle = createGlobalStyle`
   *,
   *::after,
   *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
   }
 
   body {
     background-color: ${({ theme }) => theme.palette.bg};
     color: ${({ theme }) => theme.palette.fg};
-    font-family: Noto Sans KR, sans-serif;
+    font-family: Noto Sans KR, -apple-system, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+    line-height: 1.5;
   }
 
-  html {
-    box-sizing: border-box;
+  img,
+  svg {
+    display: block;
+    vertical-align: middle;
   }
 `;
 
