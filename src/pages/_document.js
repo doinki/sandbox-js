@@ -38,6 +38,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+          <link href="/favicon.ico" rel="icon" />
         </Head>
         <body>
           <Main />

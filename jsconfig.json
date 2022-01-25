@@ -1,7 +1,5 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
     "module": "ESNext",
     "moduleResolution": "Node",
@@ -15,7 +13,8 @@
       "@/organisms": ["src/components/organisms/index.js"],
       "@/styles": ["src/styles/index.js"],
       "@/templates": ["src/components/templates/index.js"]
-    }
+    },
+    "target": "ESNext"
   },
   "include": ["src/**/*"]
 }
