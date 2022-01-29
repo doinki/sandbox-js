@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${({ theme }) => theme.palette.bg};
     color: ${({ theme }) => theme.palette.fg};
-    font-family: Noto Sans KR, -apple-system, Apple SD Gothic Neo, Malgun Gothic, 맑은 고딕, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.5;
   }
 
