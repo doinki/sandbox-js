@@ -6,10 +6,12 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  experimental: {
-    // scrollRestoration: true,
-    styledComponents: true, // https://nextjs.org/docs/advanced-features/compiler#styled-components
+  compiler: {
+    styledComponents: true, // ssr and displayName are configured by default
   },
+  // experimental: {
+  //   scrollRestoration: true,
+  // },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
