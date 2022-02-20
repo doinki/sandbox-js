@@ -1,27 +1,9 @@
 {
-  "env": {
-    "browser": true,
-    "es2021": true
-  },
-  "extends": [
-    "airbnb",
-    "airbnb/hooks",
-    "plugin:@next/next/recommended",
-    "plugin:prettier/recommended",
-    "plugin:react/jsx-runtime"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 12
-  },
+  "extends": ["airbnb", "next", "plugin:prettier/recommended"],
   "plugins": ["simple-import-sort", "sort-destructure-keys", "sort-keys-fix"],
   "rules": {
-    "import/prefer-default-export": "off",
-    "jsx-a11y/alt-text": [
-      "error",
-      {
-        "img": ["Image"]
-      }
-    ],
+    "import/prefer-default-export": "warn",
+    "jsx-a11y/alt-text": ["error", { "img": ["Image"] }],
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
@@ -30,12 +12,14 @@
         "specialLink": ["hrefLeft", "hrefRight"]
       }
     ],
-    "jsx-a11y/img-redundant-alt": [
-      "error",
-      {
-        "components": ["Image"]
-      }
-    ],
+    "jsx-a11y/aria-props": "error",
+    "jsx-a11y/aria-proptypes": "error",
+    "jsx-a11y/aria-unsupported-elements": "error",
+    "jsx-a11y/img-redundant-alt": ["error", { "components": ["Image"] }],
+    "jsx-a11y/role-has-required-aria-props": "error",
+    "jsx-a11y/role-supports-aria-props": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "react/display-name": "off",
     "react/function-component-definition": [
       "error",
       {
@@ -47,12 +31,9 @@
       "error",
       { "extensions": [".js", ".jsx"] }
     ],
-    "react/jsx-props-no-spreading": [
-      "error",
-      {
-        "custom": "ignore"
-      }
-    ],
+    "react/jsx-key": "off",
+    "react/jsx-no-duplicate-props": ["error", { "ignoreCase": true }],
+    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
     "react/jsx-sort-props": [
       "warn",
       {
@@ -61,7 +42,8 @@
         "shorthandLast": true
       }
     ],
-    "react/prop-types": "off",
+    "react/jsx-uses-react": "off",
+    "react/no-direct-mutation-state": "off",
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": "warn",
     "sort-destructure-keys/sort-destructure-keys": "warn",
@@ -69,17 +51,7 @@
   },
   "settings": {
     "import/resolver": {
-      "alias": [
-        ["@/api", "./src/api"],
-        ["@/atoms", "./src/components/atoms"],
-        ["@/constants", "./src/constants"],
-        ["@/hooks", "./src/hooks"],
-        ["@/icons", "./src/components/atoms/icons"],
-        ["@/molecules", "./src/components/molecules"],
-        ["@/organisms", "./src/components/organisms"],
-        ["@/styles", "./src/styles"],
-        ["@/templates", "./src/components/templates"]
-      ]
+      "typescript": { "alwaysTryTypes": true, "project": "jsconfig.json" }
     }
   }
 }
