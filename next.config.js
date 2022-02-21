@@ -6,12 +6,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  compiler: {
-    styledComponents: true, // ssr and displayName are configured by default
-  },
-  // experimental: {
-  //   scrollRestoration: true,
-  // },
+  compiler: { styledComponents: true },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
