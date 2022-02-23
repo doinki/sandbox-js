@@ -16,12 +16,7 @@ const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.palette.fg};
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
       Arial, sans-serif;
-    font-size: 1.6rem;
     line-height: 1.5;
-  }
-
-  html {
-    font-size: 62.5%;
   }
 
   img,

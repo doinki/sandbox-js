@@ -24,7 +24,7 @@
   "name": "sandbox",
   "private": true,
   "resolutions": {
-    "styled-components": "^5"
+    "styled-components": "^5.0.0"
   },
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
