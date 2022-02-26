@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react-jsx",
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {

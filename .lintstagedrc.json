@@ -1,4 +1,1 @@
-{
-  "*.js?(x)": "eslint --fix",
-  "*.json": "prettier --write"
-}
+{ "*.js?(x)": "eslint --fix", "*.json": "prettier --write" }

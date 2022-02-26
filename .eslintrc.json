@@ -13,7 +13,6 @@
     ],
     "jsx-a11y/img-redundant-alt": ["error", { "components": ["Image"] }],
     "react-hooks/exhaustive-deps": "error",
-    "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [
       "error",
       {
@@ -27,6 +26,7 @@
       { "callbacksLast": true, "reservedFirst": true, "shorthandLast": true }
     ],
     "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": "warn",
     "sort-destructure-keys/sort-destructure-keys": "warn",
