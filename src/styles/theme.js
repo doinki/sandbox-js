@@ -1,6 +1,6 @@
 const palette = {
-  bg: '#fbfbfd',
-  fg: '#1d1d1f',
+  backgroundColor: '#fbfbfd',
+  color: '#1d1d1f',
 };
 
 const theme = {

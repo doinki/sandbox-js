@@ -1,5 +1,11 @@
+import { Box } from '@/atoms';
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <Box as="h1" display="block" textAlign="center">
+      Home
+    </Box>
+  );
 };
 
 export default Home;
