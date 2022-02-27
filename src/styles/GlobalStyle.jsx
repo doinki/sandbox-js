@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${({ theme }) => theme.palette.backgroundColor};
-    color: ${({ theme }) => theme.palette.color};
+    background-color: ${({ theme }) => theme.palette.background};
+    color: ${({ theme }) => theme.palette.text};
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
       Arial, sans-serif;
     line-height: 1.5;

@@ -1,8 +1,14 @@
+/**
+ * @type {import('styled-components').DefaultTheme['palette']}
+ */
 const palette = {
-  backgroundColor: '#fbfbfd',
-  color: '#1d1d1f',
+  background: '#fbfbfd',
+  text: '#1d1d1f',
 };
 
+/**
+ * @type {import('styled-components').DefaultTheme}
+ */
 const theme = {
   palette,
 };
