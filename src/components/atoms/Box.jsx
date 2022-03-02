@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 /**
  * @typedef {object} SystemProps
- * @property {keyof HTMLElementTagNameMap} as
  * @property {React.CSSProperties['border']} border
  * @property {React.CSSProperties['borderBottom']} borderBottom
  * @property {React.CSSProperties['borderColor']} borderColor
@@ -12,15 +11,22 @@ import styled from 'styled-components';
  * @property {React.CSSProperties['borderTop']} borderTop
  * @property {React.CSSProperties['boxShadow']} boxShadow
  * @property {React.CSSProperties['display']} display
+ * @property {React.CSSProperties['overflow']} overflow
+ * @property {React.CSSProperties['textOverflow']} textOverflow
+ * @property {React.CSSProperties['visibility']} visibility
+ * @property {React.CSSProperties['whiteSpace']} whiteSpace
  * @property {React.CSSProperties['alignContent']} alignContent
  * @property {React.CSSProperties['alignItems']} alignItems
  * @property {React.CSSProperties['alignSelf']} alignSelf
  * @property {React.CSSProperties['flex']} flex
+ * @property {React.CSSProperties['flexBasis']} flexBasis
  * @property {React.CSSProperties['flexDirection']} flexDirection
  * @property {React.CSSProperties['flexGrow']} flexGrow
  * @property {React.CSSProperties['flexShrink']} flexShrink
  * @property {React.CSSProperties['flexWrap']} flexWrap
  * @property {React.CSSProperties['justifyContent']} justifyContent
+ * @property {React.CSSProperties['justifyItems']} justifyItems
+ * @property {React.CSSProperties['justifySelf']} justifySelf
  * @property {React.CSSProperties['order']} order
  * @property {React.CSSProperties['gap']} gap
  * @property {React.CSSProperties['columnGap']} columnGap
@@ -81,11 +87,12 @@ import styled from 'styled-components';
  * @property {React.CSSProperties['fontWeight']} fontWeight
  * @property {React.CSSProperties['letterSpacing']} letterSpacing
  * @property {React.CSSProperties['lineHeight']} lineHeight
+ * @property {React.CSSProperties['textTransform']} textTransform
  * @property {React.CSSProperties['textAlign']} textAlign
  */
 
 /**
- * @type {import('styled-components').StyledComponent<"div", any, SystemProps, never>}
+ * @type {import('styled-components').StyledComponent<'div', any, SystemProps, never>}
  * @description The Box component serves as a wrapper component for most of the CSS utility needs. https://mui.com/components/box/
  */
 const Box = styled.div.withConfig({
@@ -114,6 +121,7 @@ const Box = styled.div.withConfig({
   column-gap: ${({ columnGap }) => columnGap};
   display: ${({ display = 'flex' }) => display};
   flex: ${({ flex }) => flex};
+  flex-basis: ${({ flexBasis }) => flexBasis};
   flex-direction: ${({ flexDirection }) => flexDirection};
   flex-grow: ${({ flexGrow }) => flexGrow};
   flex-shrink: ${({ flexShrink }) => flexShrink};
@@ -134,6 +142,8 @@ const Box = styled.div.withConfig({
   grid-template-rows: ${({ gridTemplateRows }) => gridTemplateRows};
   height: ${({ height }) => height};
   justify-content: ${({ justifyContent }) => justifyContent};
+  justify-items: ${({ justifyItems }) => justifyItems};
+  justify-self: ${({ justifySelf }) => justifySelf};
   left: ${({ left }) => left};
   letter-spacing: ${({ letterSpacing }) => letterSpacing};
   line-height: ${({ lineHeight }) => lineHeight};
@@ -153,6 +163,7 @@ const Box = styled.div.withConfig({
   min-height: ${({ minHeight }) => minHeight};
   min-width: ${({ minWidth }) => minWidth};
   order: ${({ order }) => order};
+  overflow: ${({ overflow }) => overflow};
   padding: ${({ padding }) => padding};
   padding-block: ${({ paddingBlock }) => paddingBlock};
   padding-block-end: ${({ paddingBlockEnd }) => paddingBlockEnd};
@@ -168,8 +179,12 @@ const Box = styled.div.withConfig({
   right: ${({ right }) => right};
   row-gap: ${({ rowGap }) => rowGap};
   text-align: ${({ textAlign }) => textAlign};
+  text-overflow: ${({ textOverflow }) => textOverflow};
+  text-transform: ${({ textTransform }) => textTransform};
   top: ${({ top }) => top};
+  visibility: ${({ visibility }) => visibility};
   width: ${({ width }) => width};
+  white-space: ${({ whiteSpace }) => whiteSpace};
   z-index: ${({ zIndex }) => zIndex};
 `;
 
