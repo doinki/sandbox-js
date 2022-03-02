@@ -6,7 +6,11 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  compiler: { styledComponents: true },
+  compiler: {
+    removeConsole: process.env.NODE_ENV !== 'development',
+    styledComponents: true,
+  },
+  eslint: { dirs: ['src'] },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,

@@ -9,7 +9,7 @@ import { GlobalStyle, theme } from '@/styles';
 const MyApp = ({ Component, pageProps }) => {
   return (
     <>
-      <DefaultSeo title="Sandbox" />
+      <DefaultSeo />
       <Script
         src="https://polyfill.io/v3/polyfill.min.js"
         strategy="beforeInteractive"
