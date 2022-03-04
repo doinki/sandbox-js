@@ -1,7 +1,7 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import NextDocument, { Head, Html, Main, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-class MyDocument extends Document {
+class Document extends NextDocument {
   static async getInitialProps(ctx) {
     const { renderPage: originalRenderPage } = ctx;
     const sheet = new ServerStyleSheet();
@@ -12,7 +12,7 @@ class MyDocument extends Document {
           enhanceApp: (App) => (props) =>
             sheet.collectStyles(<App {...props} />),
         });
-      const initialProps = await Document.getInitialProps(ctx);
+      const initialProps = await NextDocument.getInitialProps(ctx);
 
       return {
         ...initialProps,
@@ -45,4 +45,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default Document;

@@ -6,7 +6,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle, theme } from '@/styles';
 
-const MyApp = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }) => {
   return (
     <>
       <DefaultSeo />
@@ -23,4 +23,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default App;
