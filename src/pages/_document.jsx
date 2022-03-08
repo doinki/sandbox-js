@@ -34,6 +34,7 @@ class Document extends NextDocument {
         <Head>
           <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
           <link href="/favicon.ico" rel="icon" />
+          <script src="https://polyfill.io/v3/polyfill.min.js" defer noModule />
         </Head>
         <body>
           <Main />
