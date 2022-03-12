@@ -10,7 +10,7 @@ const nextConfig = {
     removeConsole: process.env.NODE_ENV !== 'development',
     styledComponents: true,
   },
-  eslint: { dirs: ['src'] },
+  eslint: { dirs: ['src'], ignoreDuringBuilds: true },
   poweredByHeader: false,
   reactStrictMode: true,
   swcMinify: true,
