@@ -1,9 +1,9 @@
 /**
- * @type {import('styled-components').DefaultTheme['palette']}
+ * @type {Pick<import('styled-components').DefaultTheme, 'palette'>}
  */
 const palette = {
-  background: '#fbfbfd',
-  text: '#1d1d1f',
+  background: '#ffffff',
+  text: '#000000',
 };
 
 /**
