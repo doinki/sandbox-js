@@ -20,15 +20,15 @@
     "eslint-plugin-sort-destructure-keys": "^1.4.0",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "husky": "^7.0.4",
-    "lint-staged": "^12.3.5",
-    "prettier": "^2.5.1"
+    "lint-staged": "^12.3.7",
+    "prettier": "^2.6.0"
   },
   "private": true,
   "scripts": {
     "analyze": "ANALYZE=true yarn build",
     "build": "next build",
     "dev": "next dev",
-    "lint": "next lint",
+    "lint": "next lint -c .eslintrc.json",
     "prepare": "husky install",
     "start": "next start"
   },
