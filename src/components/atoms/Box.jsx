@@ -3,7 +3,7 @@ import styled from 'styled-components';
 /**
  * @type {import('styled-components').StyledComponent<'div', import('styled-components').DefaultTheme, SystemProps>}
  * @description The Box component serves as a wrapper component for most of the CSS utility needs.
- * @see {@link https://mui.com/components/box/ React Box component - MUI}
+ * @see [React Box component - MUI](https://mui.com/components/box/)
  */
 const Box = styled.div.withConfig({
   shouldForwardProp: (prop, defaultValidatorFn) =>
