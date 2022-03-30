@@ -1,19 +1,19 @@
 {
   "dependencies": {
-    "@next/bundle-analyzer": "^12.1.1",
-    "next": "^12.1.1",
+    "@next/bundle-analyzer": "^12.1.2",
+    "next": "^12.1.2",
     "next-compose-plugins": "^2.2.1",
-    "next-seo": "^5.2.0",
+    "next-seo": "^5.3.0",
     "next-transpile-modules": "^9.0.0",
     "normalize.css": "^8.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "eslint": "^8.12.0",
     "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-next": "^12.1.1",
+    "eslint-config-next": "^12.1.2",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
