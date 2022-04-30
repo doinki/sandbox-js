@@ -1,5 +1,19 @@
-import styled from 'styled-components';
+import Image from 'next/image';
 
-const Logo = styled.img.attrs({ alt: 'Logo', src: '/logo.png' })``;
+/**
+ * @param {Omit<import('next/image').ImageProps, 'src'>} props
+ */
+const Logo = (props) => {
+  return (
+    <Image
+      alt="Logo"
+      height={64}
+      src="/logo.png"
+      width={64}
+      unoptimized
+      {...props}
+    />
+  );
+};
 
 export default Logo;

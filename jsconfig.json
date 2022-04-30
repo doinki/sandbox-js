@@ -28,7 +28,7 @@
       "@/utils/*": ["src/utils/*"]
     },
     "skipLibCheck": true,
-    "target": "ESNext"
+    "target": "ES5"
   },
   "include": ["src/**/*", "types/**/*"]
 }
