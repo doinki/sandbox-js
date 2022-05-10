@@ -1,17 +1,17 @@
 import Image from 'next/image';
 
 /**
- * @param {Omit<import('next/image').ImageProps, 'src'>} props
+ * @param {Omit<import('next/image').ImageProps, 'alt' | 'src'>} props
  */
-const Logo = (props) => {
+const Logo = ({ height = 64, width = 64, ...props }) => {
   return (
     <Image
-      alt="Logo"
-      height={64}
-      src="/logo.png"
-      width={64}
+      height={height}
+      width={width}
       unoptimized
       {...props}
+      alt="Logo"
+      src="/logo.png"
     />
   );
 };
