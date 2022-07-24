@@ -5,24 +5,8 @@ const GlobalStyle = createGlobalStyle`
     position: fixed;
   }
 
-  *,
-  ::after,
-  ::before {
-    box-sizing: border-box;
-  }
-
   body {
-    background-color: ${({ theme }) => theme.palette.background};
-    color: ${({ theme }) => theme.palette.text};
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica,
-      Arial, sans-serif;
     line-height: 1.5;
-  }
-
-  img,
-  svg {
-    display: block;
-    vertical-align: middle;
   }
 `;
 

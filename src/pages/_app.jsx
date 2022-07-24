@@ -1,4 +1,4 @@
-import 'normalize.css';
+import 'modern-normalize';
 
 import { DefaultSeo } from 'next-seo';
 import { ThemeProvider } from 'styled-components';
