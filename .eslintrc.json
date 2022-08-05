@@ -1,5 +1,5 @@
 {
-  "extends": ["sandbox", "sandbox/next", "sandbox/prettier"],
+  "extends": ["sandbox", "sandbox/next", "sandbox/jest", "sandbox/prettier"],
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": "jsconfig.json"

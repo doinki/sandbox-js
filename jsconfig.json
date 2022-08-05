@@ -6,26 +6,17 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "paths": {
-      "@/api": ["src/api/index.js"],
-      "@/api/*": ["src/api/*"],
       "@/icons": ["src/components/atoms/icons/index.js"],
       "@/icons/*": ["src/components/atoms/icons/*"],
       "@/atoms": ["src/components/atoms/index.js"],
       "@/atoms/*": ["src/components/atoms/*"],
-      "@/constants": ["src/constants/index.js"],
-      "@/constants/*": ["src/constants/*"],
-      "@/hooks": ["src/hooks/index.js"],
-      "@/hooks/*": ["src/hooks/*"],
       "@/molecules": ["src/components/molecules/index.js"],
       "@/molecules/*": ["src/components/molecules/*"],
       "@/organisms": ["src/components/organisms/index.js"],
       "@/organisms/*": ["src/components/organisms/*"],
-      "@/styles": ["src/styles/index.js"],
-      "@/styles/*": ["src/styles/*"],
       "@/templates": ["src/components/templates/index.js"],
       "@/templates/*": ["src/components/templates/*"],
-      "@/utils": ["src/utils/index.js"],
-      "@/utils/*": ["src/utils/*"]
+      "@/*": ["src/*"]
     },
     "skipLibCheck": true,
     "target": "ES5"

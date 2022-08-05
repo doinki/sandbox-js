@@ -7,6 +7,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  */
 const nextConfig = {
   compiler: {
+    reactRemoveProperties: process.env.NODE_ENV !== 'test',
     removeConsole: process.env.NODE_ENV !== 'development',
     styledComponents: true,
   },
